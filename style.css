@@ -8,7 +8,7 @@ h1{
     text-align: center;
     font-size: 70px;
     font-weight: bolder;
-    color: aqua;
+    color: lightblue;
     padding: 0px;
     margin: 5px;
     text-shadow: -4px 4px #054492;
@@ -27,7 +27,7 @@ img{
 .images{
     text-align: center;
     display: inline-block;
-    padding: 70px;
+    padding: 50px;
     padding-top: 1px;
     padding-bottom: 10px;
 }
@@ -44,8 +44,8 @@ p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(55, 243, 30);
     margin: 10px;
-    text-shadow: -4px 4px #083102;
-}
+		text-shadow: -2px 2px #083102;
+	}
 
 button{
     height: 70px;
@@ -53,7 +53,7 @@ button{
     border-radius: 10px;
     transition: transform 0.2s;
     background-color: rgb(0, 145, 249);
-    box-shadow: 10px green;
+    box-shadow: 10px red;
 }
 
 button:hover{
@@ -66,4 +66,35 @@ span{
     font-weight: bold;
     color: blue;
     font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 700px) {
+	.container {width: 360px;}
+	.container{height: 720px;}
+	.images {width: 170px; padding: 5px;}
+	.images {height: 170px; justify-content: space-between;}
+	.images{padding: 0px;}
+	.img1 {width: 95px;}
+	.img1 {height: 75px;}
+	.img2 {width: 95px;}
+	.img2 {height: 75px;}
+	body {
+	background-image: url(images/astro.jfif);
+    background-size: no-repeat;
+	}
+	h1{
+		font-size: 22px; 
+		margin: 52px;
+	}
+	.player1,.player2{
+		font-size: 20px;
+	}
+	.result p{
+		font-size : 20px;
+		padding: 15px;
+	}
+	button{
+		width: 100px;
+		height: 55px;
+	}
 }
